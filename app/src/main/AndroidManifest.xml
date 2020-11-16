@@ -4,7 +4,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="记账本"
+        android:label="账本"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"
