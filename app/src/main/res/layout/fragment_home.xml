@@ -9,6 +9,16 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FFFFFF"
+                />
+        </com.google.android.material.appbar.AppBarLayout>
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
@@ -43,25 +53,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <com.google.android.material.appbar.AppBarLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <androidx.appcompat.widget.Toolbar
-                            android:id="@+id/toolbar"
-                            android:layout_width="match_parent"
-                            android:layout_height="?attr/actionBarSize"
-                            android:background="#FFFFFF"
-                            app:layout_scrollFlags="scroll|enterAlways|snap" />
-                    </com.google.android.material.appbar.AppBarLayout>
+
                     <include layout="@layout/zhichu" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recc"
                         android:layout_width="match_parent"
-                        android:layout_height="451dp"
-                        tools:ignore="MissingConstraints"
-                        tools:layout_editor_absoluteX="63dp"
-                        tools:layout_editor_absoluteY="329dp" />
+                        android:layout_height="wrap_content"
+                         />
                 </LinearLayout>
 
             </androidx.core.widget.NestedScrollView>
