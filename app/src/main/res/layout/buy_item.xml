@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:elevation="8dp"
+    app:cardCornerRadius="32dp"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    tools:ignore="PrivateResource">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tupian"
+            android:layout_height="64dp"
+            android:layout_width="64dp"
+            android:src="@drawable/food"
+            >
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:id="@+id/itemm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="106dp"
+            android:layout_toEndOf="@id/tupian"
+            android:text="餐饮"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/itemm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="180dp"
+            android:layout_marginEnd="106dp"
+            android:layout_toEndOf="@id/tupian"
+            android:text="￥"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/itemm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="198dp"
+            android:layout_toEndOf="@id/tupian"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

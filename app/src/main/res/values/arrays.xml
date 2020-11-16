@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortt">
+        <item>日汇总</item>
+        <item>月汇总</item>
+        <item>年汇总</item>
+    </string-array>
+</resources>

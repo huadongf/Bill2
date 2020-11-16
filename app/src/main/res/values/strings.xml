@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">统计</string>
+    <string name="title_notifications">我的</string>
+    <string name="app_label">搜索</string>
+    <string name="search_hint">搜索</string>
+    <string name="chart_info">账单详情</string>
+    <string name="btn_1">1</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btn_4">4</string>
+    <string name="btn_5">5</string>
+    <string name="btn_6">6</string>
+    <string name="btn_7">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_9">9</string>
+    <string name="btn_submit">确定</string>
+    <string name="btn_cancel">C</string>
+    <string name="btn_0">0</string>
+</resources>

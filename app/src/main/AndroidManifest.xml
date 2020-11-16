@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="记账本"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"
+        >
+        <activity android:name=".AddActivity"
+                  android:label="添加记账"
+                  android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"
+            >
+        </activity>
+        <activity android:name=".SearchableActivity"
+            android:label="查询结果"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            >
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
