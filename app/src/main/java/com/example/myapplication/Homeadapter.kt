@@ -2,7 +2,6 @@ package com.example.myapplication
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.app.ProgressDialog.show
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
