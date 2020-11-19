@@ -86,8 +86,11 @@ class HomeFragment : Fragment() {
         reccc.layoutManager = lay
         adapter = Homeadapter(requireContext(), results)
         reccc.adapter = adapter
+        val intent= Intent(requireContext(), DetailActivity::class.java)
         adapter.setOnItemClickListener(object : Homeadapter.OnItemClickListener {
             override fun onItemClick(position: Int) {
+                intent.putExtra(DetailActivity.IDD, results[position].idd)
+                startActivity(intent)
             }
         })
         val ss=root.findViewById<SwipeRefreshLayout>(R.id.swipeRefresh)

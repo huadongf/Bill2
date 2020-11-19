@@ -4,31 +4,39 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="账本"
+        android:label="雨燕记账"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"
-        >
-        <activity android:name=".AddActivity"
-                  android:label="添加记账"
-                  android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <activity android:name=".DetailActivity"
+            android:label="账单详情"
             >
         </activity>
-        <activity android:name=".SearchableActivity"
-            android:label="查询结果"
-            >
+        <activity
+            android:name=".AddActivity"
+            android:label="添加记账"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
+
+        </activity>
+        <activity
+            android:name=".SearchableActivity"
+            android:label="查询结果">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
-            <meta-data android:name="android.app.searchable"
-                android:resource="@xml/searchable"/>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            >
-            <meta-data android:name="android.app.default_searchable"
+            android:label="账本"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            <meta-data
+                android:name="android.app.default_searchable"
                 android:value=".SearchableActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
