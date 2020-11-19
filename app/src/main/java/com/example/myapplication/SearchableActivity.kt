@@ -21,17 +21,21 @@ class SearchableActivity : AppCompatActivity() {
         rec2.layoutManager = lay
         adapter = Searchadapter(this, results)
         rec2.adapter = adapter
-        adapter.setOnItemClickListener(object : Searchadapter.OnItemClickListener {
-            override fun onItemClick(position: Int) {
-            }
-        })
         if (Intent.ACTION_SEARCH == intent.action) {
             intent.getStringExtra(SearchManager.QUERY)?.also { query ->
+                println(query)
                 for(i in userdao.chaxun(query))
                     results.add(i)
                     adapter.notifyDataSetChanged()
             }
         }
+        val intent= Intent(this, DetailActivity::class.java)
+        adapter.setOnItemClickListener(object : Searchadapter.OnItemClickListener {
+            override fun onItemClick(position: Int) {
+                intent.putExtra(DetailActivity.IDD, results[position].idd)
+                startActivity(intent)
+            }
+        })
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {

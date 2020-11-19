@@ -2,6 +2,7 @@ package com.example.myapplication.ui.dashboard
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -15,10 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.AppDatabase
-import com.example.myapplication.Homeadapter
-import com.example.myapplication.R
-import com.example.myapplication.User
+import com.example.myapplication.*
 import com.github.aachartmodel.aainfographics.aachartcreator.AAChartModel
 import com.github.aachartmodel.aainfographics.aachartcreator.AAChartType
 import com.github.aachartmodel.aainfographics.aachartcreator.AAChartView
@@ -47,8 +45,11 @@ class DashboardFragment : Fragment() {
         reccc.layoutManager = lay
         adapter = Homeadapter(requireContext(), results)
         reccc.adapter = adapter
+        val intent= Intent(requireContext(), DetailActivity::class.java)
         adapter.setOnItemClickListener(object : Homeadapter.OnItemClickListener {
             override fun onItemClick(position: Int) {
+                intent.putExtra(DetailActivity.IDD, results[position].idd)
+                startActivity(intent)
             }
         })
         spi.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

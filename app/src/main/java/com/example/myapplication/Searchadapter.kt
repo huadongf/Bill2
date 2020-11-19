@@ -52,7 +52,7 @@ class Searchadapter(private val context: Context, private val fruitList: ArrayLi
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val fruit = fruitList[position]
         holder.mon.text=fruit.Amount.toString()
-        holder.hometime.text=fruit.Year+"年"+fruit.Month+"月"+fruit.Day+"日"
+        holder.hometime.text=fruit.times
         holder.z.text=fruit.Categroy
         Glide.with(context).load(fruit.Tupianid).into(holder.homeImage)
     }
