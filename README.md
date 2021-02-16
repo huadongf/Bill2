@@ -23,6 +23,8 @@
 | Searchadapter.kt  | 搜索页面的recyclerview适配器  |
 | User.kt  |  数据库具体的bean实体，会与数据库表column进行映射 |
 | UserDao.kt  | 数据库访问对象，实现具体的增删改查  |
+
+
 　　　　　　　　　　　　　　　　　　　　　　　　项目结构如下
 ![](https://huadongf.com/upload/20210131_11352720.png)
 　　　　　　　　　　　　　　　　　　　　　　　　首页
