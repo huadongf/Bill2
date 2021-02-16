@@ -25,13 +25,13 @@
 | UserDao.kt  | 数据库访问对象，实现具体的增删改查  |
 
 
-项目结构如下
+
 ![](https://huadongf.com/upload/20210131_11352720.png)
-首页
+
 ![](https://huadongf.com/upload/20210131_1135592.png)
-统计页
+
 ![](https://huadongf.com/upload/20210131_11361546.png)
-添加页
+
 ![](https://huadongf.com/upload/20210131_1136407.png)
-详情页
+
 ![](https://huadongf.com/upload/20210131_1136569.png)
