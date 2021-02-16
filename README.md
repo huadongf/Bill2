@@ -1,20 +1,3 @@
-<style type="text/css">
-img{text-align: center; margin: 0 auto;}
-</style>
-
-<style>
-  table{
-    border-left:1px solid #000000;border-top:1px solid #000000;
-    width: 100%;
-    word-wrap:break-word; word-break:break-all;
-  }
-  table th{
-  text-align:center;
-  }
-  table th,td{
-    border-right:1px solid #000000;border-bottom:1px solid #000000;
-  }
-</style>
 　　完整代码[https://github.com/huadongf/Bill2](https://github.com/huadongf/Bill2)  
 　　纪念一下个人独立开发的功能全面的一款app——雨燕记账。这可能是你见过的最好看的记账app！该项目后续会继续完善并上架应用商店。  
 　　完成的软件功能包括：（1）分类记录日常消费数据，包括金额，用途，日期，分类等信息，（2） 显示消费流水记录，（3）按天、周、月、年进行汇总分析形成结果。（4）能够根据输入条件查询，包括金额范围，用途，日期范围，分类等；（5）具备友好的用户数据输入界面和查询界面。  
